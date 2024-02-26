@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-all {
+    @apply flex w-full h-screen flex-col min-[1190px]:flex-row;
+}
+
+.my-nav {
+    @apply grid gap-[10px] w-full h-[100px] bg-red-100 px-[4.2%] py-[25px] text-center leading-[50px];
+    @apply md:grid-flow-col md:grid-cols-7;
+    @apply min-[1190px]:flex min-[1190px]:shrink-0 min-[1190px]:flex-col min-[1190px]:w-[366px] min-[1190px]:h-screen min-[1190px]:items-center min-[1190px]:p-[0px] min-[1190px]:gap-[10px];
+}
+
+.my-hum {
+    @apply w-[50px] h-[50px] bg-slate-800 block md:hidden;
+}
+
+.my-pic {
+    @apply w-[50px] h-[50px] bg-yellow-400;
+    @apply max-[767px]:absolute max-[767px]:left-1/2 max-[767px]:-translate-x-1/2 md:col-span-4 min-[1190px]:w-[150px] min-[1190px]:h-[150px]  min-[1190px]:mt-[65px];
+}
+
+.my-btn {
+    @apply text-slate-100 col-span-1 w-full peer-focus-within:visible peer-focus-within:z-10 md:visible invisible min-[1190px]:w-[150px] min-[1190px]:h-[50px];
+}
+
+.btn-1 {
+    @apply bg-amber-800 hover:bg-amber-400;
+}
+
+.btn-2 {
+    @apply bg-lime-800 hover:bg-lime-400;
+}
+
+.btn-3 {
+    @apply bg-sky-800 hover:bg-sky-400;
+}
+
+.my-content {
+    @apply grid md:gap-[10px] min-[1340px]:grid-flow-col;
+    @apply h-[calc(100vh-100px)] w-full md:pt-[20px] md:h-[800px] md:w-11/12 min-[1190px]:p-[0px] min-[1190px]:h-[570px] min-[1190px]:w-[800px] min-[1340px]:w-[957px];
+}
+
+.my-img {
+    @apply w-full h-full;
+}
+
+.my-img1 {
+    @apply w-full h-full col-span-1 md:col-span-2 min-[1340px]:col-span-1 bg-amber-200;
+}
